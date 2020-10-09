@@ -12,7 +12,7 @@ import Realm
 import SnapKit
 
 class RootViewController: UINavigationController {
-
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 	}

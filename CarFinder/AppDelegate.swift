@@ -14,8 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	var window: UIWindow?
 	
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-		window = UIWindow(frame: UIScreen.main.bounds)
-		let vc = RootViewController()
+		window = UIWindow(frame: CGRect(origin: UIScreen.main.bounds.origin, size: UIScreen.main.bounds.size))
+		let vc = RootViewController(rootViewController: CarCollectionViewController(presenter: CarCollectionPresenter()))
 		window?.rootViewController = vc
 		window?.makeKeyAndVisible()
 		return true
