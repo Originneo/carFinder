@@ -9,11 +9,8 @@
 /* Begin PBXBuildFile section */
 		80F31DAB18043C401D124B4A /* Pods_CarFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E1ACC21D0E3FD74B568749 /* Pods_CarFinder.framework */; };
 		F262DB1F252F8C9D00B363AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DB1E252F8C9D00B363AC /* AppDelegate.swift */; };
-		F262DB21252F8C9D00B363AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DB20252F8C9D00B363AC /* SceneDelegate.swift */; };
-		F262DB23252F8C9D00B363AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DB22252F8C9D00B363AC /* ViewController.swift */; };
-		F262DB26252F8C9D00B363AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F262DB24252F8C9D00B363AC /* Main.storyboard */; };
+		F262DB23252F8C9D00B363AC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DB22252F8C9D00B363AC /* RootViewController.swift */; };
 		F262DB28252F8CA000B363AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F262DB27252F8CA000B363AC /* Assets.xcassets */; };
-		F262DB2B252F8CA000B363AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F262DB29252F8CA000B363AC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +19,8 @@
 		900A220494E2D801904FB09A /* Pods-CarFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarFinder.debug.xcconfig"; path = "Target Support Files/Pods-CarFinder/Pods-CarFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		F262DB1B252F8C9D00B363AC /* CarFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F262DB1E252F8C9D00B363AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F262DB20252F8C9D00B363AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F262DB22252F8C9D00B363AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F262DB25252F8C9D00B363AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F262DB22252F8C9D00B363AC /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		F262DB27252F8CA000B363AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F262DB2A252F8CA000B363AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F262DB2C252F8CA000B363AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,11 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				F262DB1E252F8C9D00B363AC /* AppDelegate.swift */,
-				F262DB20252F8C9D00B363AC /* SceneDelegate.swift */,
-				F262DB22252F8C9D00B363AC /* ViewController.swift */,
-				F262DB24252F8C9D00B363AC /* Main.storyboard */,
+				F262DB22252F8C9D00B363AC /* RootViewController.swift */,
 				F262DB27252F8CA000B363AC /* Assets.xcassets */,
-				F262DB29252F8CA000B363AC /* LaunchScreen.storyboard */,
 				F262DB2C252F8CA000B363AC /* Info.plist */,
 			);
 			path = CarFinder;
@@ -151,9 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F262DB2B252F8CA000B363AC /* LaunchScreen.storyboard in Resources */,
 				F262DB28252F8CA000B363AC /* Assets.xcassets in Resources */,
-				F262DB26252F8C9D00B363AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,32 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F262DB23252F8C9D00B363AC /* ViewController.swift in Sources */,
+				F262DB23252F8C9D00B363AC /* RootViewController.swift in Sources */,
 				F262DB1F252F8C9D00B363AC /* AppDelegate.swift in Sources */,
-				F262DB21252F8C9D00B363AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F262DB24252F8C9D00B363AC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F262DB25252F8C9D00B363AC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F262DB29252F8CA000B363AC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F262DB2A252F8CA000B363AC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F262DB2D252F8CA000B363AC /* Debug */ = {
@@ -354,8 +323,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XMMUFH7ZZY;
+				DEVELOPMENT_TEAM = M32M9JNSSA;
 				INFOPLIST_FILE = CarFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,7 +333,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AA.CarFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -373,8 +343,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XMMUFH7ZZY;
+				DEVELOPMENT_TEAM = M32M9JNSSA;
 				INFOPLIST_FILE = CarFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AA.CarFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
