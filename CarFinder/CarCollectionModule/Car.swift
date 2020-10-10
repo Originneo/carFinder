@@ -79,31 +79,67 @@ struct CarBrand: Decodable {
 	}	
 }
 
-struct Car {
+struct CarModel: Decodable {
 	
 	let bodies: [CarBody]
 	let brand: CarBrand
 	let colorsCount: Int
 	let type: CarType
-	let titleRus: String
 	let minimumPrice: Int64
 	
 	enum CodingKeys: String, CodingKey {
-		case titleRus
 		case bodies
 		case colorsCount
 		case type = "transportType"
 		case brand
-		case minPrice = "minprice"
+		case minPrice = "minPrice"
 	}
 	
 	init(from decoder: Decoder) throws {
 		let containter = try decoder.container(keyedBy: CodingKeys.self)
 		bodies = try containter.decode([CarBody].self, forKey: .bodies)
-		titleRus = try containter.decode(String.self, forKey: .titleRus)
 		brand = try containter.decode(CarBrand.self, forKey: .brand)
 		type = try containter.decode(CarType.self, forKey: .type)
 		colorsCount = try containter.decode(Int.self, forKey: .colorsCount)
 		minimumPrice = try containter.decode(Int64.self, forKey: .minPrice)
+	}
+}
+
+struct Car: Decodable {
+	
+	let models: [CarModel]
+	let titleRus: String
+	
+	enum CodingKeys: String, CodingKey {
+		case models
+		case titleRus
+	}
+	
+	init(from decoder: Decoder) throws {
+		let containter = try decoder.container(keyedBy: CodingKeys.self)
+		titleRus = try containter.decode(String.self, forKey: .titleRus)
+		models = try containter.decode([CarModel].self, forKey: .models)
 	}	
+	
+	func makeShortDescription() -> String {
+//		return """
+//		Тип машины - \(type.title)
+//		Страна - \(brand.country.title)
+//		"""
+		return ""
+	}	
+}
+
+struct Cars: Decodable {
+
+	let listOfCars: [Car]
+	
+	enum CodingKeys: String, CodingKey {
+		case listOfCars = "list"
+	}
+	
+	init(from decoder: Decoder) throws {
+		let containter = try decoder.container(keyedBy: CodingKeys.self)
+		listOfCars = try containter.decode([Car].self, forKey: .listOfCars)
+	}
 }

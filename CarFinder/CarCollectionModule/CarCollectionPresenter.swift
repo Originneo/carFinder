@@ -10,12 +10,17 @@ import UIKit
 
 class CarCollectionPresenter: NSObject {
 		
+	let cars: [Car]
+	
+	init(cars: [Car]) {
+		self.cars = cars
+	}
 }
 
 extension CarCollectionPresenter: UICollectionViewDataSource {
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return 50 
+		return cars.count
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -25,10 +30,11 @@ extension CarCollectionPresenter: UICollectionViewDataSource {
 			assert(false, "Could not dequeue cell with id \(CarCollectionViewCell.idenitifier)")
 			return UICollectionViewCell()
 		}
+		let car = cars[indexPath.row]
 		
-		cell.carNameLabel.text = "BMW 2 series"
-		cell.carMinPriceLabel.text = "2000000 ₽"
-		cell.additionalInfoLabel.text = "fdegewgergergergregregergerg"
+		cell.carNameLabel.text = car.titleRus
+		cell.carMinPriceLabel.text = ""
+		cell.additionalInfoLabel.text = car.makeShortDescription()
 		return cell
 	}
 } 
