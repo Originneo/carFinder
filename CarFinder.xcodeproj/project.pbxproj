@@ -54,14 +54,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		83B111F22530C0A5009AA89E /* CarCollectionModule */ = {
+		8326E077253118C300F0AC15 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				83B111EF2530C0A0009AA89E /* CarColllectionViewController.swift */,
-				83B111F52530C17A009AA89E /* CarCollectionPresenter.swift */,
 				83B1120D2530C9D3009AA89E /* CarCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83B111F22530C0A5009AA89E /* CarCollectionModule */ = {
+			isa = PBXGroup;
+			children = (
+				8326E077253118C300F0AC15 /* View */,
+				83B111F52530C17A009AA89E /* CarCollectionPresenter.swift */,
 				83B1121325310472009AA89E /* Car.swift */,
-				8326E0722531153600F0AC15 /* Launch Screen.storyboard */,
 			);
 			path = CarCollectionModule;
 			sourceTree = "<group>";
@@ -101,6 +108,7 @@
 				F262DB1E252F8C9D00B363AC /* AppDelegate.swift */,
 				F262DB22252F8C9D00B363AC /* RootViewController.swift */,
 				83B111F22530C0A5009AA89E /* CarCollectionModule */,
+				8326E0722531153600F0AC15 /* Launch Screen.storyboard */,
 			);
 			path = CarFinder;
 			sourceTree = "<group>";

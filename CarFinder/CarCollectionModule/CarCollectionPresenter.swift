@@ -26,7 +26,9 @@ extension CarCollectionPresenter: UICollectionViewDataSource {
 			return UICollectionViewCell()
 		}
 		
-		cell.label.text = "\(indexPath.row)"
+		cell.carNameLabel.text = "BMW 2 series"
+		cell.carMinPriceLabel.text = "2000000 ₽"
+		cell.additionalInfoLabel.text = "fdegewgergergergregregergerg"
 		return cell
 	}
 } 

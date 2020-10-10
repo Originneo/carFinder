@@ -15,11 +15,11 @@ class CarCollectionViewController: UIViewController {
 	
 	lazy var carCollectionView: UICollectionView = {
 		let layout = UICollectionViewFlowLayout()
-		layout.itemSize = CGSize(width: view.frame.width - 20, height: 50)
+		layout.estimatedItemSize = CGSize(width: view.frame.width - 20, height: 150)
 		
 		let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-		cv.backgroundColor = .green
 		cv.delegate = self
+		cv.backgroundColor = .white
 		cv.dataSource = presenter
 		cv.register(CarCollectionViewCell.self, 
 					forCellWithReuseIdentifier: CarCollectionViewCell.idenitifier)
@@ -37,10 +37,20 @@ class CarCollectionViewController: UIViewController {
 	}
 	
 	private func setupView() {
+		navigationItem.title = "Машины"		
+		let barButton = UIBarButtonItem(image: UIImage(named: "camera"), 
+										style: .plain, 
+										target: self, 
+										action: #selector(cameraButtonPressed))
+		self.navigationItem.rightBarButtonItem = barButton		
 		view.addSubview(carCollectionView)
 		carCollectionView.snp.makeConstraints { (make) in
 			make.edges.equalToSuperview()
 		}
+	}
+	
+	@objc private func cameraButtonPressed() {
+		
 	}
 }
 
