@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import Realm
+import SSCustomTabbar
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -42,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		chatVcItem.title = "Чат"
 		chatVcItem.image = UIImage(named: "chat")
 		chatVc.tabBarItem = chatVcItem
-				
+
 		vc.viewControllers = [articleVc, mapVc, chatVc, newsVc]
 		
 		window?.rootViewController = vc
