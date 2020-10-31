@@ -11,6 +11,7 @@
 		8310AD83254D7DA300F2B030 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310AD82254D7DA300F2B030 /* ChatViewController.swift */; };
 		8310AD89254D7DC400F2B030 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310AD88254D7DC400F2B030 /* MapViewController.swift */; };
 		8310AD8E254D7DDC00F2B030 /* NewsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310AD8D254D7DDC00F2B030 /* NewsCollectionViewController.swift */; };
+		8310AD9F254DB44A00F2B030 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310AD9E254DB44A00F2B030 /* ChatListViewController.swift */; };
 		8326E0732531153600F0AC15 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8326E0722531153600F0AC15 /* Launch Screen.storyboard */; };
 		83546CF12531E65200306358 /* CarDBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83546CF02531E65200306358 /* CarDBO.swift */; };
 		83B111F02530C0A0009AA89E /* ArticleColllectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B111EF2530C0A0009AA89E /* ArticleColllectionViewController.swift */; };
@@ -28,6 +29,7 @@
 		8310AD82254D7DA300F2B030 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		8310AD88254D7DC400F2B030 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8310AD8D254D7DDC00F2B030 /* NewsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewController.swift; sourceTree = "<group>"; };
+		8310AD9E254DB44A00F2B030 /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
 		8326E0722531153600F0AC15 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		83546CF02531E65200306358 /* CarDBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDBO.swift; sourceTree = "<group>"; };
 		83B111EF2530C0A0009AA89E /* ArticleColllectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleColllectionViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		8310AD85254D7DA800F2B030 /* ChatModule */ = {
 			isa = PBXGroup;
 			children = (
+				8310AD9E254DB44A00F2B030 /* ChatListViewController.swift */,
 				8310AD82254D7DA300F2B030 /* ChatViewController.swift */,
 			);
 			path = ChatModule;
@@ -267,6 +270,7 @@
 				8310AD83254D7DA300F2B030 /* ChatViewController.swift in Sources */,
 				F262DB23252F8C9D00B363AC /* RootViewController.swift in Sources */,
 				83B1120E2530C9D3009AA89E /* ArticleCollectionViewCell.swift in Sources */,
+				8310AD9F254DB44A00F2B030 /* ChatListViewController.swift in Sources */,
 				8310AD89254D7DC400F2B030 /* MapViewController.swift in Sources */,
 				83B1121425310472009AA89E /* Car.swift in Sources */,
 				83B111F62530C17A009AA89E /* ArticleCollectionPresenter.swift in Sources */,

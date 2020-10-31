@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		newsItem.image = UIImage(named: "globe")
 		newsVc.tabBarItem = newsItem
 
-		let chatVc = ChatViewController()
+		let chatVc = ChatListViewController()
 		let chatVcItem = UITabBarItem()
 		chatVcItem.title = "Чат"
 		chatVcItem.image = UIImage(named: "chat")
