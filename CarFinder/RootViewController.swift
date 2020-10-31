@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 import Realm
 import SnapKit
+import SSCustomTabbar
 
 class RootViewController: UITabBarController {
 	
