@@ -15,9 +15,9 @@ struct DesignSystem {
 	static let offsetBetweenCellElements: CGFloat = 8.0
 }
 
-class CarCollectionViewCell: UICollectionViewCell {
+class ArticleCollectionViewCell: UICollectionViewCell {
 	
-	static let idenitifier = "CarCollectionViewCell"
+	static let idenitifier = "ArticleCollectionViewCell"
 	
 	lazy var carNameLabel: UILabel = {
 		let label  = UILabel()
@@ -42,7 +42,6 @@ class CarCollectionViewCell: UICollectionViewCell {
 	lazy var carImageView: UIImageView = {
 		let img = UIImageView()
 		img.contentMode = .scaleAspectFit
-		img.image = UIImage(named: "bmw")
 		return img
 	}()
 	
@@ -50,7 +49,6 @@ class CarCollectionViewCell: UICollectionViewCell {
 		let img = UIImageView()
 		img.backgroundColor = .green
 		img.contentMode = .scaleAspectFill
-		img.image = UIImage(named: "arrow")
 		return img
 	}()
 	

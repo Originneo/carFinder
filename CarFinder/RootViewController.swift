@@ -11,11 +11,10 @@ import Alamofire
 import Realm
 import SnapKit
 
-class RootViewController: UINavigationController {
+class RootViewController: UITabBarController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		navigationBar.prefersLargeTitles = true
 	}
 }
 

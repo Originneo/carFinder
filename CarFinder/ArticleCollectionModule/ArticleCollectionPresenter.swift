@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CarCollectionPresenter: NSObject {
+class ArticleCollectionPresenter: NSObject {
 		
 	let cars: [Car]
 	
@@ -17,7 +17,7 @@ class CarCollectionPresenter: NSObject {
 	}
 }
 
-extension CarCollectionPresenter: UICollectionViewDataSource {
+extension ArticleCollectionPresenter: UICollectionViewDataSource {
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return cars.count
@@ -25,9 +25,9 @@ extension CarCollectionPresenter: UICollectionViewDataSource {
 	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		
-		guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarCollectionViewCell.idenitifier, 
-															for: indexPath) as? CarCollectionViewCell else {
-			assert(false, "Could not dequeue cell with id \(CarCollectionViewCell.idenitifier)")
+		guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ArticleCollectionViewCell.idenitifier, 
+															for: indexPath) as? ArticleCollectionViewCell else {
+			assert(false, "Could not dequeue cell with id \(ArticleCollectionViewCell.idenitifier)")
 			return UICollectionViewCell()
 		}
 		let car = cars[indexPath.row]

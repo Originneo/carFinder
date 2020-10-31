@@ -9,5 +9,6 @@ target 'CarFinder' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'Realm', '~> 5.4.8'
   pod 'Alamofire', '~> 5.2'
+pod 'SSCustomTabbar'
 
 end
